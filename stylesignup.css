@@ -1,0 +1,144 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1D1F34;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+#container {
+  background-color: #252740;
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 1px solid #EE3A57;
+  border-radius: 25px;
+  background: none;
+  color: white;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.checkbox-row a {
+  color: #EE3A57;
+  text-decoration: none;
+}
+
+.naked-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.naked-checkbox:checked {
+  background-color: #EE3A57;
+}
+
+.naked-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  background-color: #EE3A57;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff4e6a;
+}
+
+p {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+
+a {
+  color: #EE3A57;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+#social a {
+  margin: 0 10px;
+}
+
+.name-row {
+  display: flex;
+  gap: 10px;
+}
+
+#imie,
+#nazwisko {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #EE3A57;
+  border-radius: 25px;
+  background: none;
+  color: white;
+}
+
+#imie::placeholder,
+#nazwisko::placeholder {
+  color: #ccc;
+}
+
